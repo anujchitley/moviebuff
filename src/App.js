@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Search from './components/Search.js';
+import CardList from './components/CardList';
+import { movieArray } from './components/movie.js';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+  
+  render(){
+       return(
+          <div className='tc bg-black'>
+            <Search />
+            <CardList movie = { movieArray }/>
+          </div> 
+        );
   }
 }
 
 export default App;
+
+
+
+
+
+
+
+
