@@ -1,11 +1,10 @@
 import React from 'react';
-import './Card.css';
 
 const Card = ({Poster, Title, Year}) => {
 	return(
 		<div className='db center mw5 black link tc dib pa2 ma3 grow bw2 shadow-5'> 
 			<div id='posterImage'>
-				<img  className='db ba b--black-10 ' src={Poster} />
+				<img alt='movie' className='db ba b--black-10 ' src={Poster} />
 			</div>
 			<div>
 				<dl className="mt2 f6 lh-copy">
